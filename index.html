@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script>
         tailwind.config = {
@@ -30,6 +32,36 @@
     </script>
 </head>
 <body class="font-lato">
-    <h1>hi</h1>
+    
+    <header class="py-20">
+        <div class="container mx-auto">
+            <div class="bg-primary-color h-28 rounded-[600px] grid grid-cols-3 items-center px-12">
+                <nav>
+                    <ul class="flex items-center gap-7">
+                        <li><a href="#" class="text-[18px] text-white font-medium">Home</a></li>
+                        <li><a href="#" class="text-[18px] text-white font-medium">About Us</a></li>
+                        <li><a href="#" class="text-[18px] text-white font-medium">Shop</a></li>
+                        <li><a href="#" class="text-[18px] text-white font-medium">All Fruits</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="./index.html" class="flex items-center justify-center gap-5">
+                        <figure>
+                            <img src="./images/logo.png" alt="Logo">
+                        </figure>
+                        <p class="text-[40px] font-bold text-white">Fruit Burst</p>
+                    </a>
+                </div>
+                <form action="#">
+                    <div class="relative">
+                        <input type="search" placeholder="Search here" class="input overflow-hidden focus-visible:outline-none text-base pr-11 h-14 w-[400px] bg-white rounded-[50px] " />
+                        <button class="absolute bg-transparent px-4 h-full rounded-[50px]  -right-1 top-1/2 -translate-y-1/2"><i class="fas fa-search text-slate-700 hover:text-slate-900"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    
 </body>
 </html>
